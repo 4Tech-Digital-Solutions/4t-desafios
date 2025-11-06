@@ -10,6 +10,42 @@ Construir uma aplicação **"Single Page Application" (SPA)** em **Angular** que
 
 ---
 
+## Instruções Gerais
+
+- **Stack obrigatória**: Angular 19 ou 20 (frontend).
+- Caso não finalize todos os requisitos, documente claramente o que foi implementado e o que ficou pendente.
+- Entregue um **README** com passo a passo completo para executar a aplicação localmente.
+- Após finalizar, envie o link do fork e aguarde nossa avaliação.
+
+---
+
+## Entrevista Técnica
+
+Após a entrega, você será convocado para uma **entrevista técnica** onde irá apresentar a aplicação rodando em sua máquina local. Nessa sessão:
+
+- Faremos **code review** colaborativo como se você já fosse parte do time.
+- Discutiremos **decisões de arquitetura**, trade-offs e padrões aplicados.
+- Você explicará seu raciocínio e como evoluiria o projeto.
+
+> **Dica do mentor:** Não altere o código após a entrega. Mantenha-o funcional e preparado para demonstração ao vivo. Caso não tenha finalizado, aproveite o momento para argumentar sobre suas decisões, dificuldades encontradas.
+
+---
+
+## Requisitos Técnicos
+
+* **Stack:** Angular (versão 19 ou 20), Angular CLI, TypeScript, HTML, CSS/SCSS.
+* **Estrutura:** O projeto deve ser criado com o Angular CLI (`ng new`).
+* **Services:** Toda a lógica de chamada HTTP (`HttpClient`) deve ser abstraída em `Services` injetáveis (ex: `BeneficiarioService`, `PlanoService`). Nenhum componente deve chamar o `HttpClient` diretamente.
+* **Roteamento (SPA):** A aplicação deve ser uma SPA e conter no mínimo as seguintes rotas:
+  * `/beneficiarios`: Lista de beneficiários.
+  * `/beneficiarios/novo`: Formulário para criar um novo beneficiário.
+  * `/beneficiarios/editar/`:id: Formulário para editar um beneficiário existente.
+  * `/planos`: Lista de planos.
+  * `/planos/novo`: Formulário para criar um novo plano.
+  * `/planos/editar/:id`: Formulário para editar um plano existente.
+  * 
+---
+
 ## Simulação do Back-end
 #### Para que você tenha total autonomia, você não irá consumir uma API real. Você usará o json-server para simular 100% do back-end localmente.
 
@@ -73,21 +109,6 @@ Construir uma aplicação **"Single Page Application" (SPA)** em **Angular** que
 * `GET /api/beneficiarios/{id}` — detalhe
 * `PUT /api/beneficiarios/{id}` — atualiza 
 * `DELETE /api/beneficiarios/{id}` — remove
-
----
-
-## Requisitos Técnicos
-
-* **Stack:** Angular (versão LTS mais recente), Angular CLI, TypeScript, HTML, CSS/SCSS.
-* **Estrutura:** O projeto deve ser criado com o Angular CLI (`ng new`).
-* **Services:** Toda a lógica de chamada HTTP (`HttpClient`) deve ser abstraída em `Services` injetáveis (ex: `BeneficiarioService`, `PlanoService`). Nenhum componente deve chamar o `HttpClient` diretamente.
-* **Roteamento (SPA):** A aplicação deve ser uma SPA e conter no mínimo as seguintes rotas:
-  * `/beneficiarios`: Lista de beneficiários.
-  * `/beneficiarios/novo`: Formulário para criar um novo beneficiário.
-  * `/beneficiarios/editar/`:id: Formulário para editar um beneficiário existente.
-  * `/planos`: Lista de planos.
-  * `/planos/novo`: Formulário para criar um novo plano.
-  * `/planos/editar/:id`: Formulário para editar um plano existente.
 
 ---
 ## Funcionalidades (Telas)
