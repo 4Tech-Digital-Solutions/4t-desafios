@@ -31,7 +31,7 @@ Este desafio avalia sua capacidade de:
 - Implementar **novas funcionalidades** com base em requisitos técnicos.
 - Tomar **decisões fundamentadas** quando não há todas as respostas explícitas.
 
-Use **IA com moderação**. Queremos avaliar **seu raciocínio** e capacidade de explicar escolhas na entrevista técnica.
+Se for usar IA, use como auxílio, mas não como principal fonte de ajuda. Queremos avaliar **seu raciocínio** e capacidade de explicar escolhas na entrevista técnica.
 
 ---
 
