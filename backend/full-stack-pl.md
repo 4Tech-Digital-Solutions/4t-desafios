@@ -3,7 +3,7 @@
 ## Instruções Gerais
 
 - Faça um **fork** do código existente no [repositório](https://github.com/4Tech-Digital-Solutions/cadastro-beneficiarios-desafio)
-- **Stack obrigatória**: .NET Core 9 (backend) e Angular 18+ (frontend).
+- **Stack obrigatória**: .NET Core 9 (backend) e Angular xx (frontend).
 - Caso não finalize todos os requisitos, documente claramente o que foi implementado e o que ficou pendente.
 - Entregue um **README** com passo a passo completo para executar a aplicação localmente.
 - Após finalizar, envie o link do fork e aguarde nossa avaliação.
@@ -133,15 +133,15 @@ Vamos avaliar especialmente:
 - Worker funcionando corretamente (lógica de prioridades).
 
 ### 3) Desenvolvimento Front-end
+- XXX
 
-### 4) Capacidade de Leitura de Requisitos
+### 4) Capacidade de interpretação de Requisitos
 - Implementação completa das funcionalidades descritas.
 - Decisões técnicas fundamentadas.
 - Capacidade de preencher lacunas com boas práticas.
 
 ### 5) Documentação
 - README executável (comandos claros).
-- Swagger configurado e funcional.
 - Decisões arquiteturais documentadas.
 
 > **Dica do mentor:** Seu código será revisado como se você já fizesse parte do time. Priorize clareza, manutenibilidade e boas práticas ao invés de soluções complexas sem necessidade. Na entrevista, saiba explicar suas escolhas.
