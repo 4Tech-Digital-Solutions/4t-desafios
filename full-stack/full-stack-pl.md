@@ -3,7 +3,7 @@
 ## Instruções Gerais
 
 - Faça um **fork** do código existente no [repositório](https://github.com/4Tech-Digital-Solutions/cadastro-beneficiarios-desafio)
-- **Stack obrigatória**: .NET Core 9 (backend) e Angular xx (frontend).
+- **Stack obrigatória**: .NET Core 9 (backend) e Angular 19 ou 20 (frontend).
 - Caso não finalize todos os requisitos, documente claramente o que foi implementado e o que ficou pendente.
 - Entregue um **README** com passo a passo completo para executar a aplicação localmente.
 - Após finalizar, envie o link do fork e aguarde nossa avaliação.
@@ -49,31 +49,48 @@ Você deve evoluir o sistema baseado no desafio [backend-jr](../backend/backend-
 
 ## Front-end (Angular)
 
-Desenvolva uma **aplicação web** com as seguintes funcionalidades:
-
-### Funcionalidades Obrigatórias
-
-#### Beneficiários
-- **Cadastro** de novo beneficiário.
-- **Listagem** com filtros (status, plano).
-- **Atualização** de beneficiário existente.
-- **Exclusão** (deve marcar como pendente, não excluir imediatamente).
-
-#### Planos
-- **Cadastro** de novo plano.
-- **Listagem** de planos.
-- **Edição** de plano existente.
-- **Exclusão** com validação de vínculo:
-  - Não permitir se houver beneficiários vinculados.
-  - Registrar exclusões bem-sucedidas em log/auditoria.
+Construir uma aplicação **"Single Page Application" (SPA)** em **Angular** que irá consumir API REST para gerenciar planos de saúde, permitindo que os administradores gerenciem o sistema.
+> **Obs: Não há a necessidade de tela de login ou construção de menus**
 
 ### Requisitos Técnicos
 
-- **Integração completa** com a API .NET Core.
-- **Validações** nos formulários.
-- **Feedback visual** (mensagens de sucesso/erro, loading states).
-- **Tabelas** com paginação, ordenação e filtros.
-- **Componentização** adequada e reuso de código.
+* **Stack:** Angular (versão LTS mais recente), Angular CLI, TypeScript, HTML, CSS/SCSS.
+* **Estrutura:** O projeto deve ser criado com o Angular CLI (`ng new`).
+* **Services:** Toda a lógica de chamada HTTP (`HttpClient`) deve ser abstraída em `Services` injetáveis (ex: `BeneficiarioService`, `PlanoService`). Nenhum componente deve chamar o `HttpClient` diretamente.
+* **Roteamento (SPA):** A aplicação deve ser uma SPA e conter no mínimo as seguintes rotas:
+  * `/beneficiarios`: Lista de beneficiários.
+  * `/beneficiarios/novo`: Formulário para criar um novo beneficiário.
+  * `/beneficiarios/editar/`:id: Formulário para editar um beneficiário existente.
+  * `/planos`: Lista de planos.
+  * `/planos/novo`: Formulário para criar um novo plano.
+  * `/planos/editar/:id`: Formulário para editar um plano existente.
+* **Integração completa** com a API .NET Core.
+
+## Funcionalidades (`/planos`)
+
+#### 1)  **Listagem (Tabela):**
+
+* Deve exibir uma tabela com `Nome` e `Código ANS` dos planos.
+* Deve ter um botão "Novo Plano" (leva para `/planos/novo`).
+* Cada linha deve ter botões "Editar" (leva para `/planos/editar/:id`) e "Excluir".
+* O botão "Excluir" deve chamar `DELETE /planos/:id` e atualizar a lista.
+
+#### 2) **Formulário (Criar/Editar):**
+
+* Recomendado o uso de Angular Reactive Forms.
+* Deve conter campos para `Nome` e `Código ANS`.
+* O componente deve ser reutilizável para "Criar" (`POST`) e "Editar" (`PUT`).
+* Ao salvar, deve redirecionar o usuário de volta para a lista.
+
+## Requisitos de Teste (Unitários)
+
+* **Ferramentas:** Utilize a stack padrão do Angular (Jasmine e Karma).
+* **Execução:** Os testes devem rodar com sucesso via `ng test`.
+
+### Cobertura Mínima Esperada:
+
+1.  **Service (Ex: `PlanoService`)**
+2.  **Componente de Formulário (Ex: `PlanoFormComponent`)**
 
 ---
 
@@ -131,7 +148,21 @@ Vamos avaliar especialmente:
 - Worker funcionando corretamente (lógica de prioridades).
 
 ### 3) Desenvolvimento Front-end
-- XXX
+- **1. Conclusão Funcional (O "CRUD"):**
+    * A aplicação permite criar, listar, editar e excluir **Planos**
+- **2. Abstração de Lógica (Services):**
+    * Criação correta de Services
+- **3. Fundamentos de Roteamento:**
+    * Utilização do `RouterModule`
+- **4. Fundamentos de Formulários (Forms):**
+    * Utilização de `Reactive Forms` e `Validators.required`
+- **5. Organização de Módulos**
+    * Utilização correta de `NgModules`
+- **6. Execução dos Testes Unitários:**
+    * OEntrega dos testes mínimos solicitados (Service e Component Form)
+    * Os testes rodam com sucesso via `ng test`
+- **7. Containerização (Docker) - `(Bônus e não obrigatório)`:**
+    * Automação do projeto com utilização de dockerfile e docker-compose.yml
 
 ### 4) Capacidade de interpretação de Requisitos
 - Implementação completa das funcionalidades descritas.
