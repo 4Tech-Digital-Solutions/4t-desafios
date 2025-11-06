@@ -37,7 +37,7 @@ Use **IA com moderação**. Queremos avaliar **seu raciocínio** e capacidade de
 
 ## Objetivo: Sistema de Cadastro de Beneficiários e Planos
 
-Você deve evoluir o sistema baseado no desafio [backend-jr](backend-jr.md). Antes de implementar as novas funcionalidades:
+Você deve evoluir o sistema baseado no desafio [backend-jr](../backend/backend-jr.md). Antes de implementar as novas funcionalidades:
 
 1. **Revise o código base** e garanta que está funcional.
 2. **Complete o CRUD** caso algo esteja faltando.
@@ -75,15 +75,13 @@ Desenvolva uma **aplicação web** com as seguintes funcionalidades:
 - **Tabelas** com paginação, ordenação e filtros.
 - **Componentização** adequada e reuso de código.
 
-> **Dica do mentor:** Organize seu código Angular seguindo as convenções da comunidade. Use services para chamadas HTTP, interceptors para tratamento global de erros, e considere usar bibliotecas UI (Angular Material, PrimeNG, etc.) para acelerar o desenvolvimento.
-
 ---
 
 ## Back-end (.NET Core 9)
 
 ### 1) Garantir Funcionalidades Base
 
-Revise e implemente **todas as funcionalidades** descritas em [backend-jr.md](backend-jr.md):
+Revise e implemente **todas as funcionalidades** descritas em [backend-jr.md](../backend/backend-jr.md):
 
 - CRUD completo de **Planos**.
 - CRUD completo de **Beneficiários**.
