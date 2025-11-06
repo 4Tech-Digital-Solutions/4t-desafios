@@ -1,4 +1,4 @@
-# Desafio Técnico — Full Stack Pleno
+# Desafio Técnico - Full Stack Pleno
 
 ## Instruções Gerais
 
