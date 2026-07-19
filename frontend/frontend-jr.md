@@ -1,6 +1,6 @@
 # Desafio Técnico — Cadastro de Planos e Beneficiários (FrontEnd Júnior)
 
-## **Atenção: Utilizar o mínimo possível de IA. Isso será verificado e avaliado! Precisamos saber do seu conhecimento, potencial e capacidade.**
+> **Uso de IA:** você pode usar ferramentas de IA à vontade. Pedimos apenas que declare como usou, preenchendo o [`USO-DE-IA.md`](../USO-DE-IA.md) e incluindo-o na raiz do seu repositório. O uso de IA não é penalizado em nenhum nível — a declaração serve para orientar a conversa na entrevista técnica.
 
 ## Objetivo
 
@@ -206,6 +206,9 @@ Após a entrega, você será convocado para uma **entrevista técnica** onde ir�
 
 * **7. README Básico:**
     * O `README.md` explica, no mínimo, como rodar o projeto (`ng serve`) e o `json-server`?
+
+* **8. Declaração de Uso de IA:**
+    * O `USO-DE-IA.md` está preenchido na raiz do repositório?
 
 
 > ### Como rodar (exemplo esperado no README)

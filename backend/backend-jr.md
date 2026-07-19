@@ -4,6 +4,8 @@
 
 Construir uma **API REST** para gerenciar **beneficiários** de um plano de saúde. O sistema deve permitir **CRUD**, aplicar **regras de negócio básicas**, persistir os dados em **banco relacional**, possuir **testes de unidade** e **documentação** (Swagger/OpenAPI).
 
+> **Uso de IA:** você pode usar ferramentas de IA à vontade. Pedimos apenas que declare como usou, preenchendo o [`USO-DE-IA.md`](../USO-DE-IA.md) e incluindo-o na raiz do seu repositório. O uso de IA não é penalizado em nenhum nível — a declaração serve para orientar a conversa na entrevista técnica.
+
 ---
 
 ## Escopo Funcional
@@ -190,6 +192,7 @@ Beneficiários:
   * Migrations / scripts SQL
   * Testes
   * README
+  * `USO-DE-IA.md` preenchido
   * Swagger/OpenAPI
   * Documentação
   * Padrões de Arquitetura e Design

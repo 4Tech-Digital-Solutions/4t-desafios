@@ -6,6 +6,7 @@
 - **Stack obrigatória**: .NET Core 9 (backend) e Angular 19 ou 20 (frontend).
 - Caso não finalize todos os requisitos, documente claramente o que foi implementado e o que ficou pendente.
 - Entregue um **README** com passo a passo completo para executar a aplicação localmente.
+- Inclua o **`USO-DE-IA.md`** preenchido na raiz do repositório (ver [instruções](../USO-DE-IA.md)).
 - Após finalizar, envie o link do fork e aguarde nossa avaliação.
 
 ---
@@ -31,7 +32,7 @@ Este desafio avalia sua capacidade de:
 - Implementar **novas funcionalidades** com base em requisitos técnicos.
 - Tomar **decisões fundamentadas** quando não há todas as respostas explícitas.
 
-Se for usar IA, use como auxílio, mas não como principal fonte de ajuda. Queremos avaliar **seu raciocínio** e capacidade de explicar escolhas na entrevista técnica.
+Você pode usar ferramentas de IA à vontade. Pedimos apenas que declare como usou, preenchendo o [`USO-DE-IA.md`](../USO-DE-IA.md) e incluindo-o na raiz do seu repositório. O uso de IA não é penalizado em nenhum nível — a declaração serve para orientar a conversa na entrevista técnica.
 
 ---
 
